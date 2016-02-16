@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Title="PIN-based login" BackgroundColor="#ffffff" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Snppts.PinBasedLogin.PinLoginPage">
+	<ContentPage.Content>
+		<Grid Padding="0,0,0,10">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="*" />
+				<RowDefinition Height="*" />
+				<RowDefinition Height="2*" />
+			</Grid.RowDefinitions>
+			<Image Grid.Row="0" Source="alpaca.png" />
+			<Label Grid.Row="1" Text="{Binding PincodeMasked}" FontFamily="Lato-Bold" TextColor="#494949" VerticalOptions="Center" FontSize="80" HorizontalTextAlignment="Center" />
+			<Grid Grid.Row="2" Padding="40,0,30,0">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="*" />
+				</Grid.ColumnDefinitions>
+				<Button Grid.Row="0" Grid.Column="0" Image="num1.png" Command="{Binding NumberCommand}" CommandParameter="1" BackgroundColor="#00FFFFFF" />
+				<Button Grid.Row="0" Grid.Column="1" Image="num2.png" Command="{Binding NumberCommand}" CommandParameter="2" BackgroundColor="#00FFFFFF" />
+				<Button Grid.Row="0" Grid.Column="2" Image="num3.png" Command="{Binding NumberCommand}" CommandParameter="3" BackgroundColor="#00FFFFFF" />
+				<Button Grid.Row="1" Grid.Column="0" Image="num4.png" Command="{Binding NumberCommand}" CommandParameter="4" BackgroundColor="#00FFFFFF" />
+				<Button Grid.Row="1" Grid.Column="1" Image="num5.png" Command="{Binding NumberCommand}" CommandParameter="5" BackgroundColor="#00FFFFFF" />
+				<Button Grid.Row="1" Grid.Column="2" Image="num6.png" Command="{Binding NumberCommand}" CommandParameter="6" BackgroundColor="#00FFFFFF" />
+				<Button Grid.Row="2" Grid.Column="0" Image="num7.png" Command="{Binding NumberCommand}" CommandParameter="7" BackgroundColor="#00FFFFFF" />
+				<Button Grid.Row="2" Grid.Column="1" Image="num8.png" Command="{Binding NumberCommand}" CommandParameter="8" BackgroundColor="#00FFFFFF" />
+				<Button Grid.Row="2" Grid.Column="2" Image="num9.png" Command="{Binding NumberCommand}" CommandParameter="9" BackgroundColor="#00FFFFFF" />
+				<Button Grid.Row="3" Grid.Column="1" Image="num0.png" Command="{Binding NumberCommand}" CommandParameter="0" BackgroundColor="#00FFFFFF" />
+			</Grid>
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>
