@@ -38,5 +38,11 @@
 	<string>UIStatusBarStyleBlackTranslucent</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Fonts/fontawesome.ttf</string>
+		<string>Fonts/Lato-Regular.ttf</string>
+		<string>Fonts/Lato-Bold.ttf</string>
+	</array>
 </dict>
 </plist>
